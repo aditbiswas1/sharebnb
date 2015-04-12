@@ -32,10 +32,10 @@ var getFinanceApi = function(){
 
 /*Cron runs every 10 minutes */
 // 60,000 = 1 minute
-var interval = 60000;
+/*var interval = 60000;
 var GetStockCron = new Cron(interval)
 
 
 GetStockCron.addJob(1, function(){
 	getFinanceApi();	
-});
+});*/
