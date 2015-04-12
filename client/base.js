@@ -13,3 +13,8 @@
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+
+
+  Template.test.helpers({
+    vals : Stocks.find({})
+  });
