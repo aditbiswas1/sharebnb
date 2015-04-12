@@ -1,0 +1,2 @@
+Template.portfolio.helpers({
+});

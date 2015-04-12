@@ -1,0 +1,2 @@
+Template.stockDetail.helpers({
+});
