@@ -14,3 +14,4 @@ http
 cron-tick
 bootstrap
 iron:router
+d3js:d3
