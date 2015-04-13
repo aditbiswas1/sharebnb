@@ -3,8 +3,25 @@
 </head>
 
 <body>
-	{{> loginButtons }}
-  <h1>Welcome to Meteor!</h1>
+  <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="{{pathFor 'dashboard'}}">ShareBNB</a>
+        <ul class="nav pull-right">
+            <li class="disabled"><a href="#">$$$$</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Playing as UserName
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+              <li><a tabindex="-1" href="pathFor 'portfolio'">View Portfolio</a></li>
+              <li class="divider"></li>
+              <li><a tabindex="-1" href="#">Log Out</a></li>
+            </ul>
+        </li>
+        </ul>
+      </div>
+  </div>
 
   {{> hello}}
   {{> test}}
