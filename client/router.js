@@ -1,6 +1,11 @@
 Router.map( function(){
 	this.route('dashboard', {
 		path: "/",
+		data: function() {
+			return { 
+				stocks : Stocks.find({})
+			}
+		}
 	});
 	
 	this.route('stockDetail',{

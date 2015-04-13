@@ -1,12 +1,35 @@
 <template name="dashboard">
-	Dashboard
-	<a href="{{pathFor 'stockDetail' name='Apple'}}">Apple</a>
-	<p> 
-		Hi! UserName
-		<a href="{{pathFor 'portfolio'}}">Portfolio</a> 
-	</p>
-	<p> 
-		Small Ticker? 
-		<a href="{{pathFor 'ticker'}}">Ticker</a>
-	</p>
+	
+	<div class="row">
+	{{#each stocks}}
+	
+	{{> stockTick }}
+
+	{{/each}}
+	</div>
+
+</template>
+
+<template name="stockTick">
+
+	<div class="well span1">
+		
+		{{company}}
+		
+		<ul class="thumbnails">
+  			<li class="span1">
+    		<a href="#" class="thumbnail">
+      			{{#if bool}}
+      			<img src="/images/upArrow.png" alt=""/>
+    			{{else}}
+    			<img src="/images/downArrow.svg" alt=""/>	
+    			{{/if}}	
+    		</a>
+  			</li>
+		</ul>
+	
+		{{val}}
+
+	</div>
+
 </template>
